@@ -1,8 +1,8 @@
-package main
+package fundamental
 
 import "fmt"
 
-func main() {
+func VarAndFunction() {
 	fmt.Print("Hello, world")
 
 	var whatToSay string
