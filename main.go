@@ -6,5 +6,6 @@ func main() {
 
 	//fundamental.VarAndFunction()
 	//fundamental.Pointer()
-	fundamental.ReceiverStructFunction()
+	//fundamental.ReceiverStructFunction()
+	fundamental.MapAndSlices()
 }
