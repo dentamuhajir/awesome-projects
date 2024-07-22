@@ -7,5 +7,7 @@ func main() {
 	//fundamental.VarAndFunction()
 	//fundamental.Pointer()
 	//fundamental.ReceiverStructFunction()
-	fundamental.MapAndSlices()
+	//fundamental.Maps()
+	fundamental.Slicing()
+
 }
