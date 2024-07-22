@@ -5,5 +5,6 @@ import "awesomeProject/fundamental"
 func main() {
 
 	//fundamental.VarAndFunction()
-	fundamental.Pointer()
+	//fundamental.Pointer()
+	fundamental.ReceiverStructFunction()
 }
