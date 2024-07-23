@@ -8,6 +8,7 @@ func main() {
 	//fundamental.Pointer()
 	//fundamental.ReceiverStructFunction()
 	//fundamental.Maps()
-	fundamental.Slicing()
+	//fundamental.Slicing()
+	fundamental.DecisionStructure()
 
 }
