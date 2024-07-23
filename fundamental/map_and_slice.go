@@ -1,13 +1,16 @@
 package fundamental
 
-import "log"
+import (
+	"log"
+	"sort"
+)
 
 type Animal struct {
 	Name           string
 	Classification string
 }
 
-func MapAndSlices() {
+func Maps() {
 	myMap := make(map[string]string)
 	myMap["dog"] = "husky"
 	myMap["cat"] = "meow"
@@ -29,4 +32,22 @@ func MapAndSlices() {
 		Classification: "dog",
 	}
 	log.Println(myMapStruct["dog"].Name)
+}
+
+func Slicing() {
+	var mySlice []string
+
+	mySlice = append(mySlice, "dog")
+	mySlice = append(mySlice, "cat")
+	mySlice = append(mySlice, "bird")
+
+	sort.Strings(mySlice)
+
+	log.Println(mySlice)
+
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	log.Println(numbers)
+
+	log.Println(numbers[0:3])
+
 }
