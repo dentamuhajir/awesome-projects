@@ -1,0 +1,2 @@
+create mod
+go mod init <name>
