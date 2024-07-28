@@ -5,6 +5,8 @@ import (
 	"net/http"
 )
 
+var portNumber = ":8080"
+
 func main() {
 
 	//fundamental.VarAndFunction()
@@ -15,14 +17,18 @@ func main() {
 	//fundamental.DecisionStructure()
 	//fundamental.LoopAndRangingOverData()
 	//fundamental.LoopAndRangingOverData()
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		n, err := fmt.Fprintf(w, "Hello World")
-		if err != nil {
-			fmt.Println(err)
-		}
-		fmt.Println(fmt.Sprintf("Number of bytes written: %d", n))
-	})
+	http.HandleFunc("/", Home)
+	//http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	//	n, err := fmt.Fprintf(w, "Hello World")
+	//	if err != nil {
+	//		fmt.Println(err)
+	//	}
+	//	fmt.Println(fmt.Sprintf("Number of bytes written: %d", n))
+	//})
 
-	_ = http.ListenAndServe(":8080", nil)
+	_ = http.ListenAndServe(portNumber, nil)
+}
 
+func Home(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "This is homepage")
 }
